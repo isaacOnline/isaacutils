@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "isaacutils"
+dynamic = ["version"]
+description = "Personal Python utilities for common tasks"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/yourusername/isaacutils"
+Repository = "https://github.com/yourusername/isaacutils"
+Issues = "https://github.com/yourusername/isaacutils/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/isaacutils"]
+
+[tool.hatch.version]
+source = "vcs"
+
+[dependency-groups]
+dev = []
