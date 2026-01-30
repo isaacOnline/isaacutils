@@ -25,6 +25,11 @@ classifiers = [
 ]
 dependencies = []
 
+[project.optional-dependencies]
+polars = [
+    "polars>=0.20",
+]
+
 [project.urls]
 Homepage = "https://github.com/yourusername/isaacutils"
 Repository = "https://github.com/yourusername/isaacutils"
