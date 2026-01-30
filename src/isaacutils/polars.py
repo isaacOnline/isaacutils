@@ -8,8 +8,7 @@ except ImportError:
         "Install with: pip install isaacutils[polars]"
     ) from None
 
-from src.isaacutils.constants import X_EPOCH_MILLIS
-from src.isaacutils.constants import X_SNFLK_BIT_SHIFT
+from isaacutils.constants import X_EPOCH_MILLIS, X_SNFLK_BIT_SHIFT
 
 
 def snowflake_to_millis(expr: Union[pl.Expr, str, pl.Series]) -> pl.Expr:
